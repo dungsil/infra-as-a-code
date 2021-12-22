@@ -1,0 +1,19 @@
+regions:
+  - global
+  - ap-northeast-2 # Asia/Seoul
+
+account-blocklist:
+  - "999999999999" # production
+
+resource-types:
+  excludes:
+    # Exclude nuke DNS (Route53)
+    - Route53HealthCheck
+    - Route53HostedZone
+    - Route53ResolverEndpoint
+    - Route53ResolverRule
+    - Route53ResourceRecordSet
+    - Route53TrafficPolicy
+
+accounts:
+  "514502930157": {} # account id
